@@ -13,7 +13,7 @@ The app features:
 ## 🚀 How to Run
 1. Download or clone the repository:
     ```bash
-    git clone https://github.com/YOUR_USERNAME/conductor-metronome-godot.git
+    git clone https://github.com/hackerkid27/conductor-metronome-godot.git
     ```
 2. Open the project with **Godot 4.x**.
 3. Run the main scene (`BeatAnimation`) to start the metronome.
