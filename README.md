@@ -24,3 +24,20 @@ The app features:
 - Built with **Godot 4.2**.
 - Uses **Control nodes** for flexible UI layout.
 - Custom **theme** applied via `AppTheme.tres` for consistent fonts, colors, and button styles.
+
+---
+
+## 📁 Repository Structure
+```cpp
+res://
+  ├── scenes/
+  |    ├── animations/
+  |    |    ├── ...animations...
+  |    ├── main.tcsn
+  |    ├── ui.tcsn
+  ├── scripts/
+  ├── themes/
+  ├── assets/
+  ├── project.godot
+  ├── README.md
+```
