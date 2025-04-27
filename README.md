@@ -23,21 +23,25 @@ The app features:
 ## 🛠️ Development Notes
 - Built with **Godot 4.2**.
 - Uses **Control nodes** for flexible UI layout.
-- Custom **theme** applied via `AppTheme.tres` for consistent fonts, colors, and button styles.
+- All scripts are in GDScript.
 
 ---
 
 ## 📁 Repository Structure
+**Does not contain all files.** Only primary files are listed. (*e.g.*, icon.svg is the icon that is displayed as the window icon. It is not displayed in the hierarchy.)
 ```cpp
 res://
   ├── scenes/
   |    ├── animations/
-  |    |    ├── ...animations...
-  |    ├── main.tcsn
-  |    ├── ui.tcsn
+  |    |    ├── ...contains animation nodes...
+  |    ├── main.tcsn (main scene)
+  |    ├── ui.tcsn (ui scene)
   ├── scripts/
+  |    ├── ...scripts...
   ├── themes/
+  |    ├── ...will eventually contain theme resources...
   ├── assets/
+  |    ├── ...graphics assets such as the position indicator...
   ├── project.godot
   ├── README.md
 ```
