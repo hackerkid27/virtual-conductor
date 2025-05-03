@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://uj0qug0ucqql"]
+[gd_scene load_steps=2 format=3 uid="uid://uj0qug0ucqql"]
+
+[ext_resource type="Script" path="res://scripts/ui.gd" id="1_d4b2h"]
 
 [node name="ui" type="Control"]
 layout_mode = 3
@@ -7,6 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_d4b2h")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 custom_minimum_size = Vector2(750, 250)
@@ -22,17 +25,7 @@ offset_right = 500.0
 grow_horizontal = 2
 grow_vertical = 0
 
-[node name="SpinBox" type="SpinBox" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-min_value = 40.0
-max_value = 218.0
-value = 120.0
-rounded = true
-alignment = 1
-suffix = "bpm"
-
-[node name="OptionButton" type="OptionButton" parent="VBoxContainer"]
+[node name="BeatSelector" type="OptionButton" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 alignment = 1
@@ -45,3 +38,13 @@ popup/item_1/text = "3 Beats/Measure"
 popup/item_1/id = 1
 popup/item_2/text = "2 Beats/Measure"
 popup/item_2/id = 2
+
+[node name="TempoSpinBox" type="SpinBox" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+min_value = 40.0
+max_value = 218.0
+value = 120.0
+rounded = true
+alignment = 1
+suffix = "bpm"

@@ -62,10 +62,10 @@ curve = SubResource("Curve2D_xtaor")
 metadata/_edit_group_ = true
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-position = Vector2(790.423, 1065.75)
-rotation = 0.407328
-progress = 2649.41
+position = Vector2(822.121, 1014.7)
+rotation = -2.85857
+progress = 3109.37
 
 [node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D"]
-scale = Vector2(0.802962, 0.802962)
+scale = Vector2(0.36951, 0.36951)
 texture = ExtResource("2_dxb8t")
