@@ -52,8 +52,10 @@ libraries = {
 curve = SubResource("Curve2D_an2a6")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-position = Vector2(270, 150)
-rotation = 1.5708
+position = Vector2(612.985, 1212.51)
+rotation = 0.636999
+progress = 1699.17
 
 [node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D"]
+scale = Vector2(0.732136, 0.732136)
 texture = ExtResource("1_3jk4k")
