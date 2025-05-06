@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://uj0qug0ucqql"]
+[gd_scene load_steps=2 format=3 uid="uid://uj0qug0ucqql"]
+
+[ext_resource type="Script" path="res://scripts/ui.gd" id="1_hoidf"]
 
 [node name="UI" type="Control"]
 layout_mode = 3
@@ -7,6 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_hoidf")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 custom_minimum_size = Vector2(750, 250)
@@ -45,3 +48,6 @@ value = 120.0
 rounded = true
 alignment = 1
 suffix = "bpm"
+
+[connection signal="item_selected" from="VBoxContainer/BeatSelector" to="." method="_on_beat_selector_item_selected"]
+[connection signal="value_changed" from="VBoxContainer/TempoSpinBox" to="." method="_on_tempo_spin_box_value_changed"]
