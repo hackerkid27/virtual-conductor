@@ -48,6 +48,3 @@ value = 120.0
 rounded = true
 alignment = 1
 suffix = "bpm"
-
-[connection signal="item_selected" from="VBoxContainer/BeatSelector" to="." method="_on_beat_selector_item_selected"]
-[connection signal="value_changed" from="VBoxContainer/TempoSpinBox" to="." method="_on_tempo_spin_box_value_changed"]
