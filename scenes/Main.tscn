@@ -1,18 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://dtwqprad5de6f"]
+[gd_scene load_steps=4 format=3 uid="uid://dtwqprad5de6f"]
 
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_2vrvv"]
 [ext_resource type="PackedScene" uid="uid://uj0qug0ucqql" path="res://scenes/UI.tscn" id="1_6jwns"]
 [ext_resource type="PackedScene" uid="uid://c1sy7ss0tx7kf" path="res://scenes/Animation.tscn" id="3_mh4lp"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_2vrvv")
 
 [node name="UI" parent="." instance=ExtResource("1_6jwns")]
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-offset_right = 1080.0
-offset_bottom = 1920.0
-grow_vertical = 0
-script = null
 
 [node name="Animation" parent="." instance=ExtResource("3_mh4lp")]
+
+[connection signal="beat_changed" from="UI" to="." method="_on_ui_beat_changed"]
+[connection signal="tempo_changed" from="UI" to="." method="_on_ui_tempo_changed"]
