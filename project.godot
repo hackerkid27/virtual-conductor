@@ -22,6 +22,10 @@ window/size/viewport_height=1920
 window/stretch/mode="canvas_items"
 window/handheld/orientation=1
 
+[gui]
+
+theme/custom="res://themes/main_theme.tres"
+
 [rendering]
 
 renderer/rendering_method="mobile"
