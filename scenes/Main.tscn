@@ -8,6 +8,8 @@
 script = ExtResource("1_2vrvv")
 
 [node name="UI" parent="." instance=ExtResource("1_6jwns")]
+offset_right = 1080.0
+offset_bottom = 1920.0
 
 [node name="Animation" parent="." instance=ExtResource("3_mh4lp")]
 

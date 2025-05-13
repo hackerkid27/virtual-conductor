@@ -106,9 +106,8 @@ curve = SubResource("Curve2D_pghrg")
 metadata/_edit_group_ = true
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Beat4"]
-position = Vector2(539.213, 1297.24)
-rotation = -2.52516
-progress = 1153.02
+position = Vector2(540, 150)
+rotation = 1.5708
 
 [node name="Sprite2D" type="Sprite2D" parent="Beat4/PathFollow2D"]
 texture = ExtResource("1_ehj0r")
@@ -131,9 +130,9 @@ curve = SubResource("Curve2D_ub6cc")
 metadata/_edit_group_ = true
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Beat2"]
-position = Vector2(662.807, 1094.19)
-rotation = 3.12892
-progress = 1809.77
+position = Vector2(599.331, 1219.24)
+rotation = 0.0168
+progress = 1199.67
 
 [node name="Sprite2D" type="Sprite2D" parent="Beat2/PathFollow2D"]
 texture = ExtResource("1_ehj0r")
