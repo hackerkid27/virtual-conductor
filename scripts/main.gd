@@ -10,7 +10,7 @@ extends Node2D
 
 
 func _ready() -> void:
-	animator.play("beat-4")
+	animator.current_animation = animations[0]
 
 
 func _on_ui_beat_changed(new_beat: int) -> void:
