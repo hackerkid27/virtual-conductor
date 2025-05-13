@@ -3,3 +3,4 @@
 [resource]
 LineEdit/font_sizes/font_size = 72
 OptionButton/font_sizes/font_size = 72
+PopupMenu/font_sizes/font_size = 64
