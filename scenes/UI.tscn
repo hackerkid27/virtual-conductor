@@ -69,6 +69,7 @@ layout_mode = 2
 size_flags_vertical = 3
 text = "v"
 
+[connection signal="item_selected" from="VBoxContainer/BeatSelector" to="." method="_on_beat_selector_item_selected"]
 [connection signal="value_changed" from="VBoxContainer/TempoSpinBox" to="." method="_on_tempo_spin_box_value_changed"]
 [connection signal="pressed" from="VBoxContainer/TempoSpinBox/VBoxContainer/ButtonUp" to="VBoxContainer/TempoSpinBox" method="_on_button_up_pressed"]
 [connection signal="pressed" from="VBoxContainer/TempoSpinBox/VBoxContainer/ButtonDown" to="VBoxContainer/TempoSpinBox" method="_on_button_down_pressed"]
