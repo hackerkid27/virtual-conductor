@@ -1,6 +1,23 @@
-[gd_resource type="Theme" format=3 uid="uid://t5aeb7b0f37a"]
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://t5aeb7b0f37a"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0t3sc"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.1, 0.1, 0.1, 0.6)
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
 
 [resource]
+Button/font_sizes/font_size = 48
+LineEdit/colors/font_uneditable_color = Color(0.87451, 0.87451, 0.87451, 1)
 LineEdit/font_sizes/font_size = 72
+LineEdit/styles/read_only = SubResource("StyleBoxFlat_0t3sc")
 OptionButton/font_sizes/font_size = 72
 PopupMenu/font_sizes/font_size = 64
