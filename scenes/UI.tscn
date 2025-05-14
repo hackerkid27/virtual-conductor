@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://uj0qug0ucqql"]
+[gd_scene load_steps=3 format=3 uid="uid://bb2hmt65nhdkg"]
 
 [ext_resource type="Script" path="res://scripts/ui.gd" id="1_hoidf"]
+[ext_resource type="Script" path="res://scripts/spinbox.gd" id="2_1xttq"]
 
 [node name="UI" type="Control"]
 layout_mode = 3
@@ -39,15 +40,35 @@ popup/item_1/id = 1
 popup/item_2/text = "2 Beats/Measure"
 popup/item_2/id = 2
 
-[node name="TempoSpinBox" type="SpinBox" parent="VBoxContainer"]
+[node name="TempoSpinBox" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-min_value = 40.0
-max_value = 218.0
-value = 120.0
-rounded = true
-alignment = 1
-suffix = "bpm"
+script = ExtResource("2_1xttq")
 
-[connection signal="item_selected" from="VBoxContainer/BeatSelector" to="." method="_on_beat_selector_item_selected"]
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/TempoSpinBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.75
+text = "120 bpm"
+alignment = 1
+editable = false
+virtual_keyboard_type = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TempoSpinBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.25
+
+[node name="ButtonUp" type="Button" parent="VBoxContainer/TempoSpinBox/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "^"
+
+[node name="ButtonDown" type="Button" parent="VBoxContainer/TempoSpinBox/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "v"
+
 [connection signal="value_changed" from="VBoxContainer/TempoSpinBox" to="." method="_on_tempo_spin_box_value_changed"]
+[connection signal="pressed" from="VBoxContainer/TempoSpinBox/VBoxContainer/ButtonUp" to="VBoxContainer/TempoSpinBox" method="_on_button_up_pressed"]
+[connection signal="pressed" from="VBoxContainer/TempoSpinBox/VBoxContainer/ButtonDown" to="VBoxContainer/TempoSpinBox" method="_on_button_down_pressed"]
