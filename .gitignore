@@ -22,3 +22,7 @@ Thumbs.db
 
 # VSCode or Editor settings (optional)
 .vscode/
+
+# Binary production files
+.apk
+.idsig
